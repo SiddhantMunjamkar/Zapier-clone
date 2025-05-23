@@ -8,7 +8,7 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout out Repo
         uses: actions/checkout@v3
@@ -25,4 +25,6 @@ jobs:
           context: .
           file: ./Dockerfile.user
           push: true
-          tags: siddhantmunjamkar/zapier-clone:latest
+          tags: |
+            siddhantmunjamkar/zapier-clone:latest
+            siddhantmunjamkar/zapier-clone:v${{ github.run_number }}
