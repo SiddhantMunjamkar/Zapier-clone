@@ -2,7 +2,6 @@
 
 A frontend clone of Zapier's workflow automation interface built with modern web technologies.
 
-> ⚠️ **Note:** This is a **frontend-only** project. No backend functionality or actual automation logic is implemented.
 
 ## Tech Stack
 
